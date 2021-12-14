@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="shortcut icon" href="images/play.svg" />
+  <title>Video Player</title>
+</head>
+<body>
+  <h1>Video Player</h1>
+
+  <div class="wrapper">
+    <div class="player">
+      <div class="player-overlay">
+        <h2 class="player-title">Música para Programar</h2>
+
+        <div class="player-actions">
+          <button class="button" id="backward" title="Retroceder 10 seg" aria-label="Retroceder 10 seg"></button>
+          <button class="button" id="play" title="Play" aria-label="Play"></button>
+          <button class="button" id="pause" title="Pausa" aria-label="Pausa" hidden></button>
+          <button class="button" id="forward" title="Avanzar 10 seg" aria-label="Avanzar 10 seg"></button>
+        </div>
+  
+        <div class="player-progress">
+          <input id="progress" type="range" value="0" min="0" max="100" step="1" />
+        </div>
+      </div>
+      
+      <video id="video" src="videos/lofi.mp4" poster="images/poster.jpg" ><!-- controls width="200" -->></video>
+    </div>
+  </div>
+
+  <script src="js/video.js"></script>
+</body>
+</html>
